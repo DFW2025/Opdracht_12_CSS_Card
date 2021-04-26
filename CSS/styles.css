@@ -1,0 +1,157 @@
+/*  All Screen */
+
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+html,
+body {
+	background-color: #C2CAD0;
+	margin: 10px;
+	font-family: "Montserrat", sans-serif;
+}
+
+.gridcontainer {
+	height: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 200px auto 200px;
+	grid-gap: 1px;
+	grid-template-areas: "h h h h h h h h h h h h" 
+	                     ". m m m m m m m m m m ." 
+						 "f f f f f f f f f f f f";
+}
+
+
+/*  Header */
+
+.header {
+	grid-area: h;
+}
+
+
+/*  Main */
+
+.main {
+	grid-area: m;
+	background-color: #f7f3f3;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 15px;
+}
+
+.card {
+	margin: 15px;
+	border: 0.9px #99a0a5 solid;
+	box-shadow: 2px 5px 30px 2px #b3adad;
+	border-radius: 2%;
+	padding: 15px;
+}
+
+.img {
+	border: 0.4px #68a7da solid;
+	width: 75px;
+	height: 75px;
+	margin:10px;
+	background-color: #458ac2;
+	float: right;
+}
+
+.card h1 {
+	margin-top: 15px;
+	color: #201f20;
+	font-size: 1.7em;
+	text-align: left;
+}
+
+.card h2 {
+	margin-top: 2px;
+	margin-bottom: 30px;
+	color: #a8a4a6;
+	font-size: 1.1em;
+	text-align: left;
+}
+
+.card p {
+	margin-top: 15px;
+	margin-bottom: 30px;
+	color: #686466;
+	font-size: 1em;
+	text-align: left;
+}
+
+strong {
+	font-weight: 900;
+	color: rgb(77, 72, 77);
+}
+
+/*  Button */
+
+.groupbutton {
+	display: flex;
+	justify-content: center;
+	margin: 40px 30px 30px 30px;
+}
+
+.groupbutton li {
+	list-style: none;
+}
+
+.button1 {
+	flex: 1 1 auto;
+	border-left: 0.12em solid #1fe040;
+	border-top: 0.12em solid #1fe040;
+	border-bottom: 0.12em solid #1fe040;
+	border-right: none;
+	border-top-left-radius: 5%;
+	border-bottom-left-radius: 5%;
+	padding: 25px;
+	background-color: #f5f8fa;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1em;
+	color: #1fe040;
+}
+
+.button1:hover {
+	color: #5c4d44;
+	background-color: #1fe040;
+}
+
+.button1:active {
+	color: #BBBBBB;
+	border-color: #BBBBBB;
+}
+
+.button2 {
+	flex: 1 1 auto;
+	border: 0.12em solid #e03c1f;
+	border-top-right-radius: 5%;
+	border-bottom-right-radius: 5%;
+	padding: 25px;
+	background-color: #f5f8fa;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	font-size: 1em;
+	color: #e03c1f;
+}
+
+.button2:hover {
+	color: #5c4d44;
+	background-color: #e03c1f;
+}
+
+.button2:active {
+	color: #BBBBBB;
+	border-color: #BBBBBB;
+}
+
+
+/*  Sidebar */
+
+
+/*  Footer */
+
+.footer {
+	grid-area: f;
+}
